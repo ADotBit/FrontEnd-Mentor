@@ -1,0 +1,13 @@
+body{
+    width: 1440px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    margin: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
