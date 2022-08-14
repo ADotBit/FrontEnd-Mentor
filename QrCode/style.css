@@ -3,16 +3,19 @@
 body{
     background-color: hsl(212, 45%, 89%);
     display: flex;
-    padding: 50px;
+    /*padding: 50px; Don't give a proper alignement. Parent is the body and child is container*/
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* Correction */
 }
 
 .card{
     background-color: hsl(0, 0%, 100%);
     padding: 20px;
-    border-radius: 40px;
-    width: 350px;
+    border-radius: 14px;
+    /* width: 350px; If you want element to be responsive, never use width */
+    max-width: 300px; /* Use max or min-width instead because it can adapt its size with the size of the screen */
+
 }
 
 img{
@@ -45,5 +48,5 @@ h1{
 @media (min-width: 1440px) {
 
 
-    
+
 }
