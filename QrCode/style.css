@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;700&display=swap');
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 40px;
+    width: 350px;
+}
+
+img{
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.content{
+    padding: 1px;
+}
+h1, p{
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+
+h1{
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
