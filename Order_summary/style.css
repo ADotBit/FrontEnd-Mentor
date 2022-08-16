@@ -38,7 +38,7 @@ body{
 
 .annual{
     margin-left: 15px;
-    margin-right: 55px;
+    margin-right: 70px;
 }
 
 .btn{
@@ -47,15 +47,47 @@ body{
     margin: 20px;
 }
 
+button{
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px
+}
+
+.btn1{
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 8px 20px 20px hsl(224, 23%, 55%, 0.3);
+    border: none;
+    color: white;
+    font-weight: 900;
+    position: relative;
+}
+
+.btn2{
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    border: none;
+    margin-bottom: -10px;
+}
+
 h4{
     margin-bottom: -12px;
 }
 
 p{
     color: hsl(224, 23%, 55%);
+}
 
+a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    font-size: 12px;
 }
 
 .txt{
     line-height: 25px;
+}
+
+.attribution{
+    opacity: 0.3;
 }
