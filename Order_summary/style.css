@@ -5,7 +5,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 100vh; /* 100vh means the element should occupy the web browser viewport height. This is always 100%*/
 }
 
 .card{
