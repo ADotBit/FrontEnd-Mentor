@@ -1,0 +1,42 @@
+body{
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.image{
+    width: 100%
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(201, 11%, 66%, 0.1);
+    gap: 30px;
+    padding: 30px;
+}
+
+.logo-footer{
+    max-width: 40px
+}
+
+.social-media{
+    display: flex;
+    gap: 40px;
+}
+
+p, a{
+    color: hsl(201, 11%, 66%);
+}
