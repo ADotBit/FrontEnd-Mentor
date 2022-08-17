@@ -6,6 +6,8 @@ body{
     justify-content: center;
     text-align: center;
     font-family: sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .image{
