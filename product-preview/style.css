@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 640px) {
     body{
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 100vh;
+        min-height: 100vh;
         background: hsl(30, 38%, 92%);
     }
 
@@ -83,18 +83,21 @@
 }
 
 /* test Desktop style. Still can't notice how to change the img */
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 640px){
     body{
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 100vh;
+        min-height: 100vh;
         background: hsl(30, 38%, 92%);
     }
 
     main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 1440px;
         background: #fff;
         border-radius: 10px;
     }
+
 }
