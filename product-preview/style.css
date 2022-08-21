@@ -82,7 +82,7 @@
     }
 }
 
-/* test Desktop style. Still can't notice how to do it*/
+/* test Desktop style. Still can't notice how to change the img */
 @media screen and (min-width: 1440px){
     body{
         display: flex;
