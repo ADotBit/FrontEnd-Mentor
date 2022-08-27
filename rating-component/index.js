@@ -13,6 +13,7 @@ submitBtn.addEventListener("click", () => {
 });
 
 rateAgain.addEventListener("click", () => {
+    rating.innerHTML = "";
     mainCard.classList.remove("hidden");
     thankCard.classList.add("hidden");
 });
