@@ -64,6 +64,7 @@ ul{
     height: 40px;
     background: var(--newBg);
     color: var(--para);
+    cursor: pointer;
 }
 
 .btn:hover{
