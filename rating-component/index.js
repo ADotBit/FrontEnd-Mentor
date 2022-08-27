@@ -7,6 +7,7 @@ const rating = document.getElementById("rate");
 const rates = document.querySelectorAll(".btn");
 
 submitBtn.addEventListener("click", () => {
+    if(!rating.innerHTML) return alert("Please select a rating");
     thankCard.classList.remove("hidden");
     mainCard.classList.add("hidden");
 });
