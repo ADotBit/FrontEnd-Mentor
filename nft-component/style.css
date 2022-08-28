@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --text: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--mainBG);
+
+}
+/*Card design*/
+
+main{
+    width: 375px;
+    padding: 1.5em;
+    background: var(--cardBG);
+    border-radius: 1em;
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+/*Content*/
+.content a{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.content p{
+    font-size: 1.3rem;
+}
+
+/* etherum */
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li, img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.ethe{
+    color: var(--cyan);
+    font-weight: 700;
+}
+
+/*Designer*/
+.creation{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--line);
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+
+.creation img{
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 35px;
+}
+
+.creation a{
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Text placement*/
+.content p, ul{
+    margin-top: 1rem;
+}
+
+/*Text color */
+p, li{
+    color: var(--text);
+}
+
+/*Hovering*/
+a:hover{
+    color:var(--cyan);
+}
+
+.container{
+    position: relative;
+    width:100%;
+    border-radius: 8px;
+}
+
+.icon{
+    position: absolute;
+    border-radius: 8px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 130px;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: hsl(178, 100%, 50%, 0.5);
+}
+
+.container:hover .icon{
+    opacity: 1;
+}
+
+/*Attribution*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--white);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
