@@ -139,7 +139,7 @@ main{
 
 /*Footer*/
 
-.footer {
+footer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -150,9 +150,9 @@ main{
     width: 100%;
     margin-bottom: 10px;
 }
-.footer a{
+footer a{
     text-decoration: none;
-    color: black;
+    color: var(--card2);
     font-weight: 700;
 }
 
