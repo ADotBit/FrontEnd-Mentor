@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --card1: hsl(31, 77%, 52%);
+    --card2: hsl(184, 100%, 22%);
+    --card3: hsl(179, 100%, 13%);
+    --white: hsla(0, 0%, 100%, 0.75);
+    --lightGrey: hsl(0, 0%, 95%);
+}
+
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Attribution*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
