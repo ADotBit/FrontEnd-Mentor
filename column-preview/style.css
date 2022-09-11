@@ -8,8 +8,6 @@
     --lightGrey: hsl(0, 0%, 95%);
 }
 
-
-
 *,
 *::before,
 *::after{
@@ -18,6 +16,131 @@
     box-sizing: border-box;
 }
 
-/*Attribution*/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    font-size: 15px;
+    font-family: Lexend Deca;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1{
+    font-family: Big Shoulders Display;
+    color: var(--lightGrey);
+    text-transform: uppercase;
+}
+
+p{
+    color: var(--white);
+    width: 26ch;
+    line-height: 1.5em;
+}
+
+main{
+    width: 375px;
+    border-radius: 30px;
+    
+}
+
+.card{
+    padding: 3em;
+}
+
+.card img,
+.card h1,
+.card p{
+    margin-bottom: 1em;
+}
+
+.card:first-child{
+    background: var(--card1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: .5s ease-out;
+}
+
+.card:nth-child(2){
+    background: var(--card2);
+    transition: .5s ease-out;
+}
+
+.card:last-child{
+    background: var(--card3);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .5s ease-out;
+}
+
+.card button{
+    padding: 1em 2.5em;
+    border: 2px solid var(--lightGrey);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+
+.card:first-child button{
+    color: var(--card1);
+    font-weight: 700;
+}
+
+.card:nth-child(2) button{
+    color: var(--card2);
+    font-weight: 700;
+}
+
+.card:last-child button{
+    color: var(--card3);
+    font-weight: 700;
+}
+
+/*Active state card*/
+.card:first-child:hover{
+    position: relative;
+    transform: scale(1.05);
+    transition: .4s ease-in;
+    border-radius: 10px;
+}
+
+.card:nth-child(2):hover{
+    transform: scale(1.05);
+    transition: .4s ease-in;
+    border-radius: 10px;
+}
+
+.card:last-child:hover{
+    transform: scale(1.05);
+    transition: .4s ease-in;
+    border-radius: 10px;
+}
+
+/*button state button*/
+.card:first-child button:hover{
+    background: var(--card1);
+    color: var(--lightGrey);
+    border: 2px solid var(--lightGrey);
+    transition: .3s ease-in;
+}
+
+.card:nth-child(2) button:hover{
+    background: var(--card2);
+    color: var(--lightGrey);
+    border: 2px solid var(--lightGrey);
+    transition: .3s ease-in;
+}
+
+.card:last-child button:hover{
+    background: var(--card3);
+    color: var(--lightGrey);
+    border: 2px solid var(--lightGrey);
+    transition: .3s ease-in;
+}
+
+/*Footer*/
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
