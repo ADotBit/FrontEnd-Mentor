@@ -41,7 +41,6 @@ p{
 main{
     width: 375px;
     border-radius: 30px;
-    
 }
 
 .card{
@@ -139,8 +138,45 @@ main{
 }
 
 /*Footer*/
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
 .footer a{
     text-decoration: none;
     color: black;
     font-weight: 700;
+}
+
+@media screen and (min-width: 875px) {
+    
+    main{
+        width: 875px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card:first-child{
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .card:last-child{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .card button{
+        margin-top: 5em;
+    }
 }
