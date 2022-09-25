@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+/* ### Primary
+
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White:  */
+:root{
+    --white: hsl(0, 0%, 100%);
+    --title: hsl(300, 43%, 22%);
+    --rate: hsl(300, 24%, 96%);
+    --para: hsl(303, 10%, 53%);
+    --pink: hsl(333, 80%, 67%);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: League Spartan;
+    font-size: 15px;
+    text-align: center;
+}
+
+main{
+    width: 375px;
+    padding: 1em;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 1em;
+}
+
+.head h1{
+    width: 15ch;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.head p{
+    width: 32ch;
+    color: var(--para);
+    font-weight: 500;
+}
+
+.rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.rate > div{
+    background: var(--rate);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.rate h2{
+    margin-top: .5em;
+    font-size: 1.2em;
+}
+
+.buyer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    text-align: left;
+    line-height: 1.3em;
+    gap: 1em;
+}
+
+.comment{
+    padding: 2em;
+    background: var(--title);
+    border-radius: 10px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+    gap: 1em;
+}
+
+.user img{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.user span{
+    color: var(--pink);
+}
+
+.buyer p,
+.user h3{
+    width: 28ch;
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+h1,
+h2{
+    color: var(--title)
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
