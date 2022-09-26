@@ -143,9 +143,15 @@ h2{
         align-items: flex-start;
     }
 
+    .head h1{
+        font-size: 3.2em;
+        margin-bottom: .2em;
+    }
+
     .head p{
         width: 44ch;
         line-height: 20px;
+        font-size: 1.2em;
     }
 
     .rate{
@@ -179,6 +185,7 @@ h2{
         flex-direction: row;
         grid-column: span 2;
         justify-content: space-between;
+        margin-top: 3em;
         gap: 2em;
     }
 
