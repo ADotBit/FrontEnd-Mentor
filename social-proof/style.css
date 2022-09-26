@@ -117,8 +117,6 @@ main{
     font-weight: 500;
 }
 
-
-
 h1,
 h2{
     color: var(--title)
@@ -130,4 +128,71 @@ h2{
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1130px) {
+    main{
+        width: 1130px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .head{
+        text-align: left;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .head p{
+        width: 44ch;
+        line-height: 20px;
+    }
+
+    .rate{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rate > div {
+        width: 400px;
+        display: flex;
+        gap: .5em;
+    }
+
+    .rate > div:nth-child(2){
+        margin-left: 6em;
+    }
+
+    .rate > div:last-child{
+        margin-left: 12em;
+    }
+
+    .rate img{
+        align-self: center;
+    }
+
+    .rate h2{
+        margin-left: 1em;
+    }
+
+    .buyer{
+        flex-direction: row;
+        grid-column: span 2;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .comment:first-of-type{
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .comment:last-of-type{
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
+    .comment p{
+        width: 30ch;
+    }
 }
