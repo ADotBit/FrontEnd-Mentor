@@ -255,7 +255,13 @@ a{
         margin-bottom: 7em;
     }
 
+    #workflow > div {
+        display: flex;
+        justify-content: center;
+    }
+
     .detail p{
+        height: 100%;
         width: 32ch;
     }
 
