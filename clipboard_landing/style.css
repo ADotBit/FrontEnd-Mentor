@@ -221,7 +221,7 @@ a{
     }
 
     #snippets{
-        margin-bottom: 16em;
+        margin-bottom: 10.5em;
     }
 
     #snippets h2{
@@ -232,7 +232,7 @@ a{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 70px 70px 60px;
-        margin-top: 6em;
+        margin-top: 8em;
         text-align: left;
         gap: 5em;
     }
@@ -246,9 +246,10 @@ a{
         width: 33ch;
     }
 
+
     #access_clipboard img{
         width: 900px;
-        margin: 4.5em 0 0 0;
+        margin: 3em 0 0 0;
     }
 
     #workflow{
