@@ -257,11 +257,11 @@ a{
 
     #workflow > div {
         display: flex;
+        align-items: center;
         justify-content: center;
     }
 
     .detail p{
-        height: 100%;
         width: 32ch;
     }
 
