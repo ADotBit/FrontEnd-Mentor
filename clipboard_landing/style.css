@@ -113,7 +113,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8em;
+    margin-top: 6em;
+    padding: 3em;
     background-color: hsl(201, 11%, 66%, 0.1);
     gap: 30px;
 }
