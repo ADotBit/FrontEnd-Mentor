@@ -113,13 +113,13 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 8em;
     background-color: hsl(201, 11%, 66%, 0.1);
     gap: 30px;
- 
 }
 
 .logo-footer{
-    max-width: 40px
+    max-width: 50px;
 }
 
 .social-media{
