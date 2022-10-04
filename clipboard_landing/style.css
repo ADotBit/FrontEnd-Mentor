@@ -321,6 +321,11 @@ a{
         width: 60ch;
     }
 
+    .social-media > img{
+        cursor: pointer;
+        background: none;
+    }
+
     a:hover{
         color: var(--button1);
     }
