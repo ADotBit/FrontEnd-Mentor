@@ -1,23 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --button1: hsl(171, 66%, 44%);
+    --button2: hsl(233, 100%, 69%);
+    --title: hsl(210, 10%, 33%);
+    --para: hsl(201, 11%, 66%);
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: url(./images/bg-header-mobile.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body{
-    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Bai Jamjuree;
+    font-size: 18px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0 3em 0;
+}
+
+#main{
+    gap: 1em;
+    margin-bottom: 9em;
+}
+
+#main h1{
+    font-size: 1.8em;
+    line-height: 1.5em;
+}
+
+#snippets{
+    gap: 3em;
+    margin-bottom: 8em;
+}
+
+#snippets > div:first-child{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: sans-serif;
-    padding-left: 30px;
-    padding-right: 30px;
+    gap: .8em;
 }
 
-.image{
-    width: 100%
+
+#access_clipboard{
+    gap: 1.5em;
+    margin-bottom: 3em;
 }
+
+#access_clipboard img{
+    margin-top: 1.5em;
+}
+
+#workflow{
+    gap: 1em;
+}
+
+#workflow img{
+    margin: 1.5em 0 1.5em 0;
+}
+
+#workflow img:first-of-type{
+    margin-top: 4em;
+}
+
 
 #logo{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    gap: 3em;
+}
+
+.logo{
+    max-width: 130px;
+}
+
+#clipboard{
+    margin-top: 8em;
+    gap: 1.5em
 }
 
 footer{
@@ -27,7 +115,7 @@ footer{
     align-items: center;
     background-color: hsl(201, 11%, 66%, 0.1);
     gap: 30px;
-    padding: 30px;
+ 
 }
 
 .logo-footer{
@@ -39,6 +127,53 @@ footer{
     gap: 40px;
 }
 
-p, a{
-    color: hsl(201, 11%, 66%);
+
+/* Buttons design */
+.btn{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px
 }
+
+button{
+    width: 320px;
+    border-radius: 30px;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.btn1{
+    background: var(--button1);
+}
+
+.btn2{
+    background: var(--button2);
+}
+
+/* Global design*/
+.image{
+    width: 100%;
+}
+
+h1, h2{
+    width: 18ch;
+    color: var(--title);
+}
+
+h3{
+    margin-bottom: .3em;
+    color: var(--title);
+    font-size: 1.3em;
+}
+
+p, a{
+    width: 30ch;
+    color: var(--para);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -8,18 +8,14 @@
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Clipboard landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <header>
+  <main>
+    <header>
       <img src ="images/logo.svg">
-  </header>
-  <div id="main">
+    </header>
+
+  <section id="main">
     <h1>A history of everything you copy</h1>
 
     <p>Clipboard allows you to track and organize everything you 
@@ -28,28 +24,33 @@
       <button class="btn1">Download for iOS</button>
       <button class="btn2">Download for Mac</button>
     </div>
-  </div>
-  <section id="snippets">
-  <h2>Keep track of your snippets</h2>
+  </section>
 
-    <p>Clipboard instantly stores any item you copy in the cloud, 
-    meaning you can access your snippets immediately on all your 
-    devices. Our Mac and iOS apps will help you organize everything.</p>
+  <section id="snippets">
+    <div>
+      <h2>Keep track of your snippets</h2>
+      <p>Clipboard instantly stores any item you copy in the cloud, 
+      meaning you can access your snippets immediately on all your 
+      devices. Our Mac and iOS apps will help you organize everything.</p>
+    </div>
+      
     <img class="image" src="images/image-computer.png" alt="computer">
 
-    <h3>Quick Search</h3>
-
-    <p>Easily search your snippets by content, category, web address, application, and more.</p>
-
-    <h3>iCloud Sync</h3>
-
-    <p>Instantly saves and syncs snippets across all your devices.</p>
-
-    <h3>Complete History</h3>
-
-    <p>Retrieve any snippets from the first moment you started using the app.</p>
+    <div>
+      <h3>Quick Search</h3>
+      <p>Easily search your snippets by content, category, web address, application, and more.</p>
+    </div>
+    <div>
+      <h3>iCloud Sync</h3>
+      <p>Instantly saves and syncs snippets across all your devices.</p>
+    </div>
+    <div>
+      <h3>Complete History</h3>
+      <p>Retrieve any snippets from the first moment you started using the app.</p>
+    </div>
   </section>
-  <section id="acces_clipboard">
+
+  <section id="access_clipboard">
     <h2>Access Clipboard anywhere</h2>
     <p>Whether you’re on the go, or at your computer, you can access all your Clipboard 
     snippets in a few simple clicks.</p>
@@ -77,11 +78,11 @@
     <p>Quick preview of all snippets on your Clipboard for easy access.</p>
   </section>
   <section id="logo">
-    <img src="images/logo-google.png">
-    <img src="images/logo-ibm.png">
-    <img src="images/logo-microsoft.png">
-    <img src="images/logo-hp.png">
-    <img src="images/logo-vector-graphics.png">
+    <img class="logo" src="images/logo-google.png">
+    <img class="logo" src="images/logo-ibm.png">
+    <img class="logo" src="images/logo-microsoft.png">
+    <img class="logo" src="images/logo-hp.png">
+    <img class="logo" src="images/logo-vector-graphics.png">
   </section>
   <section id="clipboard">
     <h1>Clipboard for iOS and Mac OS</h1>
@@ -105,11 +106,11 @@
       <img src="images/icon-twitter.svg">
       <img src="images/icon-instagram.svg">
     </div>
-  
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  </main>
   </footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/AxlMrt">Axel</a>.
+  </p>
 </body>
 </html>
