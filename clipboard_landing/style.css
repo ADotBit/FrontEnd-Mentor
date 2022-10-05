@@ -24,10 +24,6 @@ html{
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: Bai Jamjuree;
     font-size: 18px;
 }
