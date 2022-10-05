@@ -152,10 +152,13 @@ button{
 
 .btn1{
     background: var(--button1);
+    border-bottom: 3px solid hsl(171, 66%, 35%);
+
 }
 
 .btn2{
     background: var(--button2);
+    border-bottom: 3px solid hsl(233, 53%, 53%);
 }
 
 /* Global design*/
