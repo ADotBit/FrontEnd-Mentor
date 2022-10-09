@@ -8,23 +8,21 @@ const share = document.querySelector('.share');
 
 
 mobileBtn.addEventListener('click', () => {
-    console.log("Holà")
     if (profil.style.display !== 'none'){
         profil.style.display = 'none';
         media.style.display = 'flex';
         share.style.background = 'var(--title)';
-
     }else{
         profil.style.display = 'block';
         media.style.display = 'none';
         share.style.background = 'white';
     }
-})
+});
 
 desktopBtn.addEventListener('click', () => {
     if(media.style.display === 'inline-flex'){
         media.style.display = 'none';
     }else{
-        media.style.display = 'inline-flex'
+        media.style.display = 'inline-flex';
     }    
-})
+});
