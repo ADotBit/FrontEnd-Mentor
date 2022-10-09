@@ -177,6 +177,7 @@ h1, h2{
     .header img{
         width: 400px;
         height: 100%;
+        border-bottom-left-radius: 10px;
     }
 
     .content{
