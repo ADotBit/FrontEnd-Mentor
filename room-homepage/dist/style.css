@@ -1,9 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+:root{
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --paragraph: hsl(0, 0%, 63%);
+}
+/*Very Dark Gray: hsl(0, 0%, 27%) */
+
 *,
 *::before,
 *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  font-family: League Spartan;
+  font-size: 12px;
+}
+
+header{
+  background: url(./images/mobile-image-hero-1.jpg) no-repeat center center fixed;
+}
+
+header,
+section,
+.attribution{
+  width: 375px;
+  background: var(--white);
+  padding: 2rem;
+}
+
+h1{
+  width: 13ch;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+p{
+  width: 35ch;
+  color: var(--paragraph);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .attribution { 
