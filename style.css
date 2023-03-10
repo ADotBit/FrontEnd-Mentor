@@ -180,5 +180,10 @@ footer {
     border-bottom-right-radius: .5rem;
     border-bottom-left-radius: 0;
   }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
