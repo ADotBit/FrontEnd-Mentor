@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --cyan2: hsl(179, 54%, 51%);
+  --bright_yellow: hsl(71, 73%, 54%);
+  --light_gray: hsl(204, 43%, 93%);
+  --grayish_blue: hsl(218, 22%, 67%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  background: var(--light_gray);
+}
+
+main {
+  width: 83%;
+  margin: 4.5rem auto;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+}
+
+.community {
+  background: white;
+  padding: 1.6rem 1.5rem;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.community > h1 {
+  color : var(--cyan);
+}
+
+.community > p {
+  width: 33ch;
+  font-size: .9rem;
+  line-height: 1.8;
+  color: var(--grayish_blue);
+}
+
+.community > div {
+  margin: 1.5rem 0;
+}
+
+.community > div > span {
+  color: var(--bright_yellow);
+  font-weight: 700;
+}
+
+.subscription {
+  background: var(--cyan);
+  padding: 1.5rem;
+}
+
+.subscription > div {
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  line-height: 1.35;
+}
+
+.subscription p {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.subscription > div > p > span {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.subscription > button {
+  width: 100%;
+  background: var(--bright_yellow);
+  border: none;
+  border-radius: .3rem;
+  padding: .9rem 1.5rem;
+  font-weight: 700;
+  font-size: .9rem;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+
+.why_us {
+  background: var(--cyan2);
+  padding: 1.5rem;
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+}
+
+.why_us > p {
+  width: 22ch;
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (min-width: 1022px) {
+  main {
+    width: 44%;
+    border-radius: .5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+
+  }
+
+  .community {
+    padding: 2.5rem 2.5rem;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+  }
+
+  .community > h1 {
+    font-size: 1.5rem;
+  }
+
+  .community > div {
+    margin-bottom: .85rem;
+  }
+
+  .community > p {
+    width: 60ch;
+  }
+
+  .community > span {
+    font-size: 1.1rem;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+  }
+
+  .subscription, .why_us {
+    width: 100%;
+    padding: 2.5rem;
+  }
+
+  .subscription {
+    border-bottom-left-radius: .5rem;
+  }
+
+  .subscription > div {
+    margin-bottom: 1.8rem;
+  }
+
+  .subscription > div > p {
+    width: 25ch;
+  }
+
+  .why_us {
+    padding: 2.5rem;
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: 0;
+  }
+}
+
